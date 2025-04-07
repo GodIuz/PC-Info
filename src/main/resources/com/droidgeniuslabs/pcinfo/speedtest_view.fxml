@@ -1,0 +1,15 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.SpeedTestController"
+      alignment="CENTER" spacing="20" style="-fx-padding: 30;">
+
+    <Label text="Internet Speed Test" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <ProgressIndicator fx:id="loadingIndicator" visible="false"/>
+    <Label fx:id="resultLabel" text="Click the button to test speed" style="-fx-font-size: 16px;"/>
+    <Button text="Run Speed Test" onAction="#runSpeedTest"/>
+    <Button text="Close" fx:id="closeButton" onAction="#closeWindow"/>
+</VBox>

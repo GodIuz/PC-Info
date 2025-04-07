@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.SystemInfoController"
+      alignment="CENTER" spacing="20" style="-fx-padding: 30;">
+
+    <Label text="System Information" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+    <ProgressIndicator fx:id="loadingIndicator" visible="true"/>
+
+    <VBox fx:id="infoBox" visible="false" spacing="10" style="-fx-padding: 10;">
+        <Button text="Close" fx:id="closeButton" onAction="#closeWindow"/>
+    </VBox>
+</VBox>

@@ -1,0 +1,12 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.CpuTempController"
+      alignment="CENTER" spacing="20" style="-fx-padding: 30;">
+
+    <Label text="CPU Temperature Monitor" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <Label fx:id="tempLabel" text="Initializing..." style="-fx-font-size: 24px;"/>
+    <Button text="Close" fx:id="closeButton" onAction="#closeWindow"/>
+</VBox>
